@@ -1,0 +1,20 @@
+.chat-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.chat-wrapper .left-side {
+  width: 390px;
+  background-color: #FFFFFF;
+}
+
+.chat-wrapper .right-side {
+  flex-grow: 1;
+  background-color: #FDFCFF;
+}
+
+.chat-wrapper .left-side,
+.chat-wrapper .right-side {
+  height: 100%;
+ 
+}

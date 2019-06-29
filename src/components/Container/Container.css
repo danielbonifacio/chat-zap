@@ -1,0 +1,6 @@
+.container {
+  width: 1200px;
+  height: 780px;
+  box-shadow: 0 3px 8px rgba(0,0,0,.07);
+  overflow: hidden;
+}

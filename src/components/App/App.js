@@ -2,9 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import './App.css';
 
+import Container from '../Container/Container';
+
 class App extends React.Component {
   state = {
-    name: 'Daniel'
+    name: 'Marcos'
   }
 
   handleChange = (e) => {
@@ -19,16 +21,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Hello, { this.state.name }
-          </p>
-          <input
-            value={this.state.name}
-            onChange={this.handleChange}
-          />
-        </header>
+      <div className="app">
+        <Container />
       </div>
     )
   }

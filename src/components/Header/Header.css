@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  box-shadow: 0 3px 6px rgba(0,0,0,.07);
+}
+
+.header .left-side {
+  width: 390px;
+  background-color: #7BE0D8;
+  color: #ffffff;
+}
+
+.header .right-side {
+  flex-grow: 1;
+  color: #53C2E0;
+}
+
+.header .left-side,
+.header .right-side {
+  height: 73px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
