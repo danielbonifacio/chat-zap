@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
+import { connect } from 'react-redux';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    name: 'Daniel'
+  }
+
+  handleChange = (e) => {
+    this.setState({
+      name: e.target.value
+    })
+  }
+
+  componentDidMount() {
+    console.log(this.props.test)
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <p>
+            Hello, { this.state.name }
+          </p>
+          <input
+            value={this.state.name}
+            onChange={this.handleChange}
+          />
+        </header>
+      </div>
+    )
+  }
 }
 
-export default App;
+const mapStateToProps = state => state;
+
+export default connect(mapStateToProps)(App);
