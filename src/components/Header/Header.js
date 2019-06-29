@@ -1,15 +1,15 @@
 import React from 'react';
 import './Header.css';
 
-import Avatar from '../Avatar/Avatar';
+import Badge from '../Badge/Badge';
 
 const Header = () => (
   <div className="header">
     <div className="left-side">
-      <Avatar />
+      <Badge />
     </div>
     <div className="right-side">
-      <Avatar />
+      <Badge />
     </div>
   </div>
 );
