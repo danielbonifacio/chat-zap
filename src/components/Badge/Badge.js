@@ -1,11 +1,11 @@
 import React from 'react';
 import './Badge.css';
 
+import Avatar from '../Avatar/Avatar';
+
 const Badge = (props) => (
   <div className="badge">
-    <div className="avatar">
-      {/* <img className="image" src="" /> */}
-    </div>
+    <Avatar />
     <span className="name">Marcos Vinicius</span>
   </div>
 );

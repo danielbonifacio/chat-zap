@@ -1,17 +1,27 @@
 .header {
   display: flex;
   box-shadow: 0 3px 6px rgba(0,0,0,.07);
+  position: relative;
 }
 
 .header .left-side {
   width: 390px;
+  
   background-color: #7BE0D8;
-  color: #ffffff;
+  background-color: var(--primary);
+  
+  color: #FFFFFF;
+  color: var(--white);
 }
 
 .header .right-side {
   flex-grow: 1;
+  
   color: #53C2E0;
+  color: var(--secondary);
+
+  background-color: #FDFCFF;
+  background-color: var(--light);
 }
 
 .header .left-side,

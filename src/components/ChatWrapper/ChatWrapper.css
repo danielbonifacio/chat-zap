@@ -1,20 +1,21 @@
 .chat-wrapper {
   display: flex;
-  height: 100%;
+  height: calc(100% - 73px);
 }
 
 .chat-wrapper .left-side {
   width: 390px;
   background-color: #FFFFFF;
+  background-color: var(--white);
 }
 
 .chat-wrapper .right-side {
   flex-grow: 1;
   background-color: #FDFCFF;
+  background-color: var(--light);
 }
 
 .chat-wrapper .left-side,
 .chat-wrapper .right-side {
   height: 100%;
- 
 }

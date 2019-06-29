@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+:root {
+  --primary: #7BE0D8;
+  --secondary: #53C2E0;
+  --light: #FDFCFF;
+  --warm: #FFB8B0;
+  --white: #FFFFFF;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -16,4 +24,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background-image: url(./bg.svg);
+  background-size: cover;
+  background-position: center center;
 }
