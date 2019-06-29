@@ -16,7 +16,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log(this.props.test)
+    console.log(this.props.chats)
   }
 
   render() {
